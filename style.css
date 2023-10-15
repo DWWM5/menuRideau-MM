@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+/* Style du menu */
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            transition: height 0.3s ease-in-out;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            z-index: 1;
+        }
+
+        /* Style du bouton du menu */
+        .menu-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Style des éléments du menu */
+        .menu-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .menu-item {
+            margin: 10px 0;
+            text-decoration: none;
+            color: #fff;
+            display: block;
+            font-size: 18px;
+        }
+
+        /* Lorsque le bouton du menu est cliqué, ajustez la hauteur du menu */
+        .menu-button:focus + .menu {
+            height: 100%;
+        }
